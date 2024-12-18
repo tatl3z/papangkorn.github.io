@@ -1,17 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio ของปภังกร สายเขื่อนสี</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #990000;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: #1a1a1a;
+            border-bottom: 2px solid #990000;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #990000;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        #about img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #990000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p, h3 {
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project {
+            flex: 1 1 250px;
+            background-color: #1a1a1a;
+            padding: 15px;
+            border: 1px solid #990000;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(153, 0, 0, 0.5);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #990000;
+        }
+        footer {
+            background-color: #990000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        ul li a:hover {
+            color: #e60000;
+        }
+    </style>
 </head>
 <body>
-    <h1># papangkorn.github.io</h1>
 
-    <h3># Papangkorn Saikhueansi</h3>
-    <h3># Title</h3>
-    <h3># number 01</h3>
-    <h3># IT.5101</h3>
-    <h3># ID Students 66309010006</h3>
+    <header>
+        <h1>Portfolio</h1>
+        <p>นาย ปภังกร สายเขื่อนสี (ไตเติ้ล)</p>
+    </header>
+
+    <nav>
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#projects">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <img src="66309010006.jpg" alt="ปภังกร สายเขื่อนสี">
+        <h3>ชื่อ: นาย ปภังกร สายเขื่อนสี (ชื่อเล่น: ไตเติ้ล)</h3>
+        <p>อายุ: 20 ปี | กรุปเลือด: O</p>
+        <p>กิจกรรมที่ชอบ: เล่นเกม, ดูหนัง, ฟังเพลง, นอนพักผ่อน</p>
+        <p>ความสามารถพิเศษ: อดนอนได้นาน</p>
+    </section>
+
+    <section id="projects">
+        <h2>ผลงาน</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="pro1.jpg" alt="Project 1">
+                <h3>ฝึกงานที่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</h3>
+                <p>เป็นIT Support ที่ บริหารธุรกิจและศิลปศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+            </div>
+            <div class="project">
+                <img src="pro2.jpg" alt="Project 2">
+                <h3>นักบอล</h3>
+                <p>เคยเป็นนักเตะเป็นหน้าเป้าที่แมนซิตี้</p>
+                <p>ได้แชมป์พรีเมียร์ลีค</p>
+                <p>เป็นดาวซันโว</p>
+            </div>
+            <div class="project">
+                <img src="pro3.jpg" alt="Project 3">
+                <h3>เคยเป็นฮีโร่</h3>
+                <p>ช่วยโลกให้ปลอดภัยจากอันตรายทั้งหลาย</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>ติดต่อ</h2>
+        <ul>
+            <li>Email: <a href="mailto:stu66309010006@lannapoly.ac.th">stu66309010006@lannapoly.ac.th</a></li>
+            <li>Phone: <a href="tel:0966970324">0966970324</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100009302398866&sk=photos_of" target="_blank">Title Papangkon</a></li>
+            <li>Line ID: tatl3z</li>
+            <li>Instagram: <a href="https://instagram.com/tlenpp" target="_blank">@tlenpp</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 ปภังกร สายเขื่อนสี (ไตเติ้ล) เลขที่1 IT.5101</p>
+    </footer>
+
 </body>
 </html>
